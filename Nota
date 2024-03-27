@@ -1,2 +1,0 @@
-il sito non funziona se lo sposti l'html dalla root. Forse puoi impostare dalle impostazioni della repository su pages una directory diversa da cui prende il file html ma non mi pare sia possibile
-(quindi quella sorta di indirizzo che hanno tutti i file, tipo questo ha JembiPower.github.io e quindi si trova nella root, mentre style.css ha come directory JembiPower.github.io/struttura) così lo puoi mettere dove vuoi
