@@ -3,7 +3,7 @@
 <title style="color: red; font-size: 18px;">CHIMICA</title>
 </head>
 <body>
-  <div>
+  <div id="Youyou">
 <h1>POTRESTI ESSERE TU YOUYOU</h1>
 <div style="display:flex; align-items: center"> <img src="TU YOUYOU.jpeg" alt="TU YOUYOU" style="width: 200px; height: 200px">
 <p style="margin-left:10px">È una chimica cinese nata il 30 dicembre 1930 e ad oggi ha ben 93 anni. Ha vinto un premio Nobel nel 2015 per la medicina contro la malaria ed è la prima scienziata cinese a ricevere un premio Nobel in una categoria scientifica senza avere in curriculum un dottorato. 
@@ -22,7 +22,7 @@ L’anno successivo, il team di Tu distilla il principio attivo del composto, l�
 
 Ci vorranno altri due interi decenni, ma alla fine l’OMS raccomanderà la terapia con artemisinina come prima cura contro la malaria. </p> </div>
   </div>
-  <div>
+  <div id="Ellion">
   <h1>POTRESTI ESSERE GERTRUDE BELLE ELLION</h1>
 <div style="display:flex; align-items: center"> <img src="gertrude.jpeg" alt="Gertrude Belle Elion" style="width: 200px; height: auto">
 <p style="margin-left:10px">È stata una biochimica e farmacologa super, nota per il suo straordinario contributo alla ricerca e allo sviluppo di farmaci rivoluzionari. Nata il 23 gennaio 1918 a New York City, negli Stati Uniti, è cresciuta in un ambiente di modesta origine, ma ha dimostrato fin da giovane una straordinaria brillantezza e passione per la scienza. Elion ha studiato chimica al Hunter College di New York, laureandosi nel 1937, e successivamente ha ottenuto un master in scienze presso la New York University. 
@@ -38,4 +38,19 @@ Le sue straordinarie capacità scientifiche e la sua dedizione al lavoro hanno p
 Oltre al suo eccezionale lavoro scientifico, è stata anche una figura ispiratrice per le donne in campo scientifico, dimostrando che con determinazione e ingegno, è possibile raggiungere risultati straordinari anche in un campo tradizionalmente dominato dagli uomini. La sua eredità vive attraverso i farmaci che ha sviluppato e il suo impatto duraturo sulla medicina moderna. Gertrude Belle Elion è una delle menti più brillanti e influenti del XX secolo, il cui lavoro ha salvato innumerevoli vite e ha migliorato la qualità della vita per milioni di persone in tutto il mondo.</p> </div>
   </div>
 </body>
+    <script>
+    function Hide(min, max) {
+    var numero = Math.floor(Math.random() * (max - min + 2)) + min;
+      if (numero < 51) {
+       var hiddenDiv = document.getElementById('Ellion');
+       hiddenDiv.classList.add('hidden');
+      }
+      else {
+       var hiddenDiv5 = document.getElementById('Youyou');
+       hiddenDiv5.classList.add('hidden');
+      }
+    }
+    window.addEventListener("load", function() {
+    Hide(1, 100);
+});
 </html>
