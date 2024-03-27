@@ -38,9 +38,23 @@ Fu un’astronoma e una divulgatrice scientifica ma soprattutto, Margherita Hack
     function generaNumeroCasuale(min, max) {
     var numero = Math.floor(Math.random() * (max - min + 2)) + min;
       if numero < 31 {
-        
+       var hiddenDiv = document.getElementById('Herschel');
+       hiddenDiv.classList.add('hidden');
+       var hiddenDiv = document.getElementById('Hack');
+       hiddenDiv.classList.add('hidden')
       }
-      
+      else if numero < 62 {
+       var hiddenDiv = document.getElementById('Ipazia');
+       hiddenDiv.classList.add('hidden');
+       var hiddenDiv = document.getElementById('Hack');
+       hiddenDiv.classList.add('hidden')
+      }
+      else {
+       var hiddenDiv = document.getElementById('Herschel');
+       hiddenDiv.classList.add('hidden');
+       var hiddenDiv = document.getElementById('Ipazia');
+       hiddenDiv.classList.add('hidden')
+      }
     }
     window.addEventListener("load", function() {
     generaNumeroCasuale(1, 100);
