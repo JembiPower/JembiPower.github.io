@@ -33,7 +33,7 @@ Laura Bassi muore a Bologna nel 1788 all’età di 66 anni. </p> </div>
 <div style="display:flex; align-items: center"> <img src="annamani-ji.webp" alt="ANNA MANI" style="width: 200px; height: auto">
 <p style="margin-left: 10px"></p> </div>  
   </div>
-  <div>
+  <div id="Curie">
 <h1><span style="color: #FFFFFF;">POTRESTI ESSERE MARIE CURIE</span></h1>
 <div style="display:flex; align-items:center"> <img src="OIP (2).jpeg" alt="MARIE CURIE" style="width: 200px; height:auto">
 <p style="margin-left: 10px">Marie, passata alla storia come "la madre della fisica moderna", è nata a Varsavia il 7 novembre 1867 in una famiglia di insegnanti poi caduta in povertà e sin da adolescente Marie Curie lavorò come istitutrice per portare i soldi a casa e aiutare la famiglia. La sua passione per lo studio era grandissima ma in Polonia a quel tempo le donne non potevano accedere agli studi superiori. Per questo, con l'aiuto economico della sorella maggiore, si trasferì a Parigi laureandosi in Fisica nel 1893 con risultati eccezionali, al punto da ottenere un premio dalla sua stessa Polonia che le consentì di laurearsi anche in Matematica nel 1894.  
@@ -59,5 +59,62 @@ Il 4 luglio 1934 Marie Curie morì e successivamente nell’aprile del 1995, le 
 (Per paura delle contaminazioni del materiale radioattivo, la bara di Marie Curie è stata avvolta in una camicia di piombo così come tutti i suoi appunti: sono conservati dentro scatole piombate e chi vuole studiarli deve indossare una tuta protettiva). </p> </div>  
   </div>
 </body>
-
+  <script>
+    function Hide(min, max) {
+    var numero = Math.floor(Math.random() * (max - min + 2)) + min;
+      if (numero < 21) {
+       var hiddenDiv = document.getElementById('Meitner');
+       hiddenDiv.classList.add('hidden');
+       var hiddenDiv2 = document.getElementById('Bassi');
+       hiddenDiv2.classList.add('hidden')
+       var hiddenDiv3 = document.getElementById('Manie');
+       hiddenDiv3.classList.add('hidden');
+       var hiddenDiv4 = document.getElementById('Courie');
+       hiddenDiv4.classList.add('hidden') 
+      }
+      else if (numero < 42) {
+       var hiddenDiv5 = document.getElementById('Maric');
+       hiddenDiv5.classList.add('hidden');
+       var hiddenDiv6 = document.getElementById('Bassi');
+       hiddenDiv6.classList.add('hidden')
+       var hiddenDiv7 = document.getElementById('Manie');
+       hiddenDiv7.classList.add('hidden');
+       var hiddenDiv8 = document.getElementById('Courie');
+       hiddenDiv8.classList.add('hidden')
+      }
+     else if (numero < 63) {
+       var hiddenDiv9 = document.getElementById('Maric');
+       hiddenDiv9.classList.add('hidden');
+       var hiddenDiv6 = document.getElementById('Meitner');
+       hiddenDiv6.classList.add('hidden')
+       var hiddenDiv7 = document.getElementById('Manie');
+       hiddenDiv7.classList.add('hidden');
+       var hiddenDiv8 = document.getElementById('Courie');
+       hiddenDiv8.classList.add('hidden')
+     }
+     else if (numero < 83) {
+       var hiddenDiv9 = document.getElementById('Maric');
+       hiddenDiv9.classList.add('hidden');
+       var hiddenDiv10 = document.getElementById('Meitner');
+       hiddenDiv10.classList.add('hidden')
+       var hiddenDiv11 = document.getElementById('Bassi');
+       hiddenDiv11.classList.add('hidden');
+       var hiddenDiv12 = document.getElementById('Courie');
+       hiddenDiv12.classList.add('hidden')
+      }
+     else {
+       var hiddenDiv13 = document.getElementById('Maric');
+       hiddenDiv13.classList.add('hidden');
+       var hiddenDiv14 = document.getElementById('Meitner');
+       hiddenDiv14.classList.add('hidden')
+       var hiddenDi15 = document.getElementById('Bassi');
+       hiddenDiv15.classList.add('hidden');
+       var hiddenDiv16 = document.getElementById('Manie');
+       hiddenDiv16.classList.add('hidden')
+      }
+    }
+    window.addEventListener("load", function() {
+    Hide(1, 100);
+});
+  </script>
 </html>
