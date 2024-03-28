@@ -50,4 +50,30 @@ Questi disegni vengono poi trasformati in due libri: il primo del 1675 con il ti
 <p style="margin-left:10px"></p> </div>
   </div>
 </body>
+  <script>
+    function Hide(min, max) {
+    var numero = Math.floor(Math.random() * (max - min + 2)) + min;
+      if (numero < 31) {
+       var hiddenDiv = document.getElementById('Levi');
+       hiddenDiv.classList.add('hidden');
+       var hiddenDiv2 = document.getElementById('Sibylla');
+       hiddenDiv2.classList.add('hidden')
+      }
+      else if (numero < 62) {
+       var hiddenDiv3 = document.getElementById('Carson');
+       hiddenDiv3.classList.add('hidden');
+       var hiddenDiv4 = document.getElementById('Sibylla');
+       hiddenDiv4.classList.add('hidden')
+      }
+      else {
+       var hiddenDiv5 = document.getElementById('Levi');
+       hiddenDiv5.classList.add('hidden');
+       var hiddenDiv6 = document.getElementById('Carson');
+       hiddenDiv6.classList.add('hidden')
+      }
+    }
+    window.addEventListener("load", function() {
+    Hide(1, 100);
+});
+  </script>
 </html>
