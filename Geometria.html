@@ -39,5 +39,30 @@ Ha collaborato con il matematico e fisico Carl Friedrich Gösta Mittag-Leffler;
 Ha pubblicato diversi articoli sulle sue ricerche in fisica. Fu un’attivista sulla scrittura, sulla matematica, sulle scienze, sull’impegno sociale e contribuì sull’emancipazione femminile;</p> </div>
   </div>
 </body>
-
+  <script>
+    function Hide(min, max) {
+    var numero = Math.floor(Math.random() * (max - min + 2)) + min;
+      if (numero < 33) {
+       var hiddenDiv = document.getElementById('Mirzakhani');
+       hiddenDiv.classList.add('hidden');
+       var hiddenDiv2 = document.getElementById('Viazovska');
+       hiddenDiv2.classList.add('hidden')
+      }
+      else if (numero < 66) {
+       var hiddenDiv3 = document.getElementById('Kovalevskaja');
+       hiddenDiv3.classList.add('hidden');
+       var hiddenDiv4 = document.getElementById('Viazovska');
+       hiddenDiv4.classList.add('hidden')
+      }
+      else {
+       var hiddenDiv5 = document.getElementById('Mirzakhani');
+       hiddenDiv5.classList.add('hidden');
+       var hiddenDiv6 = document.getElementById('Kovalevskaja');
+       hiddenDiv6.classList.add('hidden')
+      }
+    }
+    window.addEventListener("load", function() {
+    Hide(1, 99);
+});
+  </script>
 </html>
