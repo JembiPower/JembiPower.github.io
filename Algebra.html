@@ -8,7 +8,7 @@
 <title style="color: red; font-size: 18px;">ALGEBRA</title>
 </head>
 <body bgcolor="#9370db">
-  <div>
+  <div id="Germain">
 <h1><span style="color: #FFFFFF;">POTRESTI ESSERE MARIE SOPHIE GERMAIN</span></h1>
 <div style="display:flex; alig-items: center"> <img src="Sophie germain.jpeg" alt="MARIE SOPHIE GERMAIN" style="width: 200px; height: auto">
 <p style="margin-left:10px">Marie Sophie Germain fu una matematica francese nota soprattutto per il suo lavoro sulla teoria dei numeri e per la “battaglia” che dovette condurre è considerata come una vera e propria icona per il femminismo; infatti, per essere accettata dall’ambiente accademico, fu costretta a utilizzare diversi pseudonimi e in seguito le occorsero diversi anni per essere riconosciuta.  
@@ -35,7 +35,7 @@ Nel 1809 però, avvenne una svolta nella vita di Marie: l’Accademia delle scie
 
 Nonostante i suoi meriti non le venne mai conferita la laurea e morì di tumore prima di essere premiata con quella ad Honoris-causa; ma anche nella sua sepoltura non la si degnò del merito che le spettava.  </p> </div>
   </div>
-  <div>
+  <div id="Agnesi">
 <h1><span style="color: #FFFFFF;">POTRESTI ESSERE MARIA GAETANA AGNESI</span></h1>
 <div style="display:flex; alig-items: center"> <img src="maria-gaetana-agnesi-14268170.jpg" alt="MARIA GAETANA AGNESI" style="width: 200px; height: auto">
 <p style="margin-left:10px">Maria Gaetana Agnesi è stata un simbolo per la scienza e l’avanzamento delle donne in tutti gli ambiti scientifici e matematici, nata nel 1718, durante tutta la sua vita ha sempre avuto un grande interesse per il sapere e conoscere sempre nuove cose. 
@@ -46,5 +46,36 @@ Anche la filosofia e la lingua, principalmente quella italiana, erano nel suo ca
 
 Morta nel 1799, ha lasciato tra le più grandi impronte delle donne, non solo per la scienza, filosofia e tanto altro, ma nell'ambito dell’umanità, facendo capire al mondo intero che anche le donne potevano fare le stesse cose che fanno gli uomini, che anche le donne potevano... </p> </div>
   </div>
+  <div id="Noether">
+<h1><span style="color: #FFFFFF;">POTRESTI ESSERE AMALIE EMMY NOETHER</span></h1>
+<div style="display:flex; alig-items: center"> <img src="maria-gaetana-agnesi-14268170.jpg" alt="MARIA GAETANA AGNESI" style="width: 200px; height: auto">
+<p style="margin-left:10px">È stata una matematica tedesca che ha rivoluzionato l'algebra con le sue scoperte. È nata nel 1882 ed è riuscita ad affermarsi in un campo al tempo dominato dagli uomini, lasciando un segno nella storia della matematica. Il suo lavoro ha posto le basi per lo sviluppo dell'algebra astratta: la teoria degli anelli, dei gruppi e dei moduli. Ha istituito l'idealità e l'omomorfismo, cambiando la comprensione delle strutture algebriche. Ha scritto il Teorema di Noether, anche chiamato teorema di simmetria che ha stravolto la nostra comprensione dell'universo. Ha contribuito molto anche alla teoria degli invarianti, sviluppando nuovi strumenti per l'analisi di sistemi di equazioni. All'epoca le discriminazioni di genere non mancavano, ma lei ha saputo farsi strada nella sua materia ottenendo anche i complimenti di alcuni dei più grandi matematici del suo tempo, come Albert Einstein e David Hilbert, prendendo il soprannome di "madre dell'algebra moderna". Ha dovuto lottare contro gli stereotipi e il pregiudizio sessista per ottenere il riconoscimento accademico. Le fu negata la possibilità di ottenere una cattedra universitaria per molti anni, ma grazie a Hilbert ottenne un incarico di insegnamento non ripagato. La vita di questa donna ha ispirato un sacco di altre a perseguire carriere scientifiche e a superare gli stereotipi sulle femmine. Sono stati creati in suo onore l'Emmy Noether Center for Algebra and Geometry e il premio Emmy Noether in algebra per riconoscerla e per invitare la ricerca in matematica.</p> </div>
+  </div>  
 </body>
+  <script>
+    function Hide(min, max) {
+    var numero = Math.floor(Math.random() * (max - min + 2)) + min;
+      if (numero < 33) {
+       var hiddenDiv1 = document.getElementById('Germain');
+       hiddenDiv1.classList.add('hidden');
+       var hiddenDiv2 = document.getElementById('Agnesi');
+       hiddenDiv2.classList.add('hidden')
+      }
+      else if (numero < 66) {
+       var hiddenDiv3 = document.getElementById('Noether');
+       hiddenDiv3.classList.add('hidden');
+       var hiddenDiv4 = document.getElementById('Agnesi');
+       hiddenDiv4.classList.add('hidden')
+      }
+      else {
+       var hiddenDiv5 = document.getElementById('Germain');
+       hiddenDiv5.classList.add('hidden');
+       var hiddenDiv6 = document.getElementById('Noether');
+       hiddenDiv6.classList.add('hidden')
+      }
+    }
+    window.addEventListener("load", function() {
+    Hide(1, 100);
+});
+  </script>
 </html>
