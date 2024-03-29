@@ -43,28 +43,36 @@ Fu un’astronoma e una divulgatrice scientifica ma soprattutto, Margherita Hack
     function Hide(min, max) {
     var numero = Math.floor(Math.random() * (max - min + 2)) + min;
       if (numero < 25) {
-       var hiddenDiv = document.getElementById('Herschel');
-       hiddenDiv.classList.add('hidden');
+       var hiddenDiv1 = document.getElementById('Herschel');
+       hiddenDiv1.classList.add('hidden');
        var hiddenDiv2 = document.getElementById('Hack');
        hiddenDiv2.classList.add('hidden')
-      }
-      else if (numero < 50) {
        var hiddenDiv3 = document.getElementById('Ipazia');
        hiddenDiv3.classList.add('hidden');
+      }
+      else if (numero < 50) {
        var hiddenDiv4 = document.getElementById('Hack');
        hiddenDiv4.classList.add('hidden')
-      }
-       else if (numero < 75) {
        var hiddenDiv5 = document.getElementById('Ipazia');
        hiddenDiv5.classList.add('hidden');
        var hiddenDiv6 = document.getElementById('Tereškova');
        hiddenDiv6.classList.add('hidden')
       }
-      else {
-       var hiddenDiv7 = document.getElementById('Herschel');
+      else if (numero < 75) {
+       var hiddenDiv7 = document.getElementById('Ipazia');
        hiddenDiv7.classList.add('hidden');
        var hiddenDiv8 = document.getElementById('Tereškova');
        hiddenDiv8.classList.add('hidden')
+       var hiddenDiv9 = document.getElementById('Herschel');
+       hiddenDiv9.classList.add('hidden');
+      }
+      else {
+       var hiddenDiv10 = document.getElementById('Tereškova');
+       hiddenDiv10.classList.add('hidden')
+       var hiddenDiv11 = document.getElementById('Herschel');
+       hiddenDiv11.classList.add('hidden');
+       var hiddenDiv12 = document.getElementById('Hack');
+       hiddenDiv12.classList.add('hidden');
       }
     }
     window.addEventListener("DOMContentLoaded", function() {
