@@ -8,9 +8,9 @@
 <title style="color: red; font-size: 18px;">GEOMETRIA</title>
 </head>
 <body bgcolor="#9370db">
-  <div>
+  <div id="Mirzakhani">
 <h1><span style="color: #FFFFFF;">POTRESTI ESSERE MARYAMIN MIRZAKHANI</span></h1>
-<div style="display:flex; align-items: center"> <img src="MARIE SOPHIE GERMAIN.jpg" alt="MARYAMIN MIRZAKHANI" style="width: 200px; height: auto">
+<div style="display:flex; align-items: center"> <img src="1.webp" alt="MARYAMIN MIRZAKHANI" style="width: 200px; height: auto">
 <p style="margin-left:10px">Nata a Theran nel 1977. All’inizio voleva fare la scrittrice, ma al liceo capisce le sue capacità vincendo 2 medaglie d’oro Olimpiche della matematica diventando la prima donna iraniana a vincere. Dopo la laurea in Theran, va in America per un dottorato ad Harvard. Dopo un lavoro come ricercatrice alla Clay Mathemathics Institute e da insegnate a Princeton. Nel 2008 diventa professoressa nell’Università di Standford, in California. 
 
 Nel 2014 è stata la prima donna a ricevere la medaglia Fields, una specie di Nobel della matematica che viene considerato come uno di esso.  
@@ -18,6 +18,51 @@ Nel 2014 è stata la prima donna a ricevere la medaglia Fields, una specie di No
 Purtroppo, nel 14 luglio 2017 a 40 anni è mancata a causa di un tumore al seno e dopo un anno dalla sua scomparsa la Confederazione Internazionale delle Donne Matematiche ha deciso che il 12 maggio, data della sua nascita, si festeggerà in tutto il mondo la giornata per le donne matematiche, nota come Giorno delle Matematiche. 
 
 Maryam Mirzakhani ha contribuito agli studi della geometria iperbolica, teoria ergodica e geometria simplettica.</p> </div>
+  <div id="Viazovska">
+<h1><span style="color: #FFFFFF;">POTRESTI ESSERE MARYNA VIAZOVSKA</span></h1>
+<div style="display:flex; align-items: center"> <img src="1.webp" alt="MARYNA VIAZOVSKA" style="width: 200px; height: auto">
+<p style="margin-left:10px">Maryna Viazovska nasce a Kiev, in Ucraina nel 1884. Per tre anni consecutivi (2002-2003-2004-2005) partecipa come studentessa universitaria al Concorso Internazionale di matematica per gli studenti delle università. Nel 2010 si laurea nell’istituto di Matematica dell’Accademia Nazionale delle Scienze dell’Ucraina e nel 2013 prende il suo primo dottorato nella città tedesca di Bonn. Nello stesso anno ottiene anche un master all’università di Kaiserslautern. Nel 2016 risolve il problema dell’impacchettamento di sfere nella dimensione 8 e con l’aiuto di altri matematici della dimensione 24, sempre durante quest’anno vince il premio Salem. Un anno più tardi grazie alle sue scoperte riesce a vincere il premio SASTRA Ramanujan. Nel 2018 vince un altro premio (New Horizons) ed è stata invitata presso il Congresso internazionale dei matematici. Dal 2018 insegna all’università di Losanna in Svizzera. Nel 2019 vince il premio Ruth Lyttle Satter nel campo della matematica. Nel 2022 è una delle vincitrici della medaglia Fields.</p> </div>
+  </div>
+  <div id="Kovalevskaja">
+<h1><span style="color: #FFFFFF;">POTRESTI ESSERE SOFIA KOVALEVSKAJA</span></h1>
+<div style="display:flex; align-items: center"> <img src="1.webp" alt="SOFIA KOVALEVSKAJA" style="width: 200px; height: auto">
+<p style="margin-left:10px">È nata il 15 gennaio 1850 in Russia a Mosca ed è morta il 10 febbraio 1891 in Svezia a Stoccolma (morta a 41 anni a causa influenza epidemica complicata da polmonite). La sua famiglia era influenzata dalla scienza e dal sapere; quindi, è da lì che prende questa passione. (1870-1874) Ha studiato all’Università di Berlino sotto la guida di Karl Weierstraß. I suoi risultati matematici lo impressionarono e la sostenne; 
+
+Ha contribuito nel Teorema di Cauchy-Kovalevskaya, che riguarda le equazioni differenziali alle derivate parziali. Questo teorema è stato fondamentale per lo sviluppo dell’analisi della matematica; 
+
+I frutti della sua ricerca furono così impressionanti che l’Università ritenne superfluo farle sostenere qualunque altro esame per conseguire la laurea e le fu conferito il dottorato di ricerca senza altri esami.  
+
+Ha vinto il Premio Bordin dell'Accademia delle Scienze di Parigi per il suo lavoro sulla rotazione di un corpo solido attorno a un punto fisso. Ha condotto ricerche sulla meccanica razionale e sulla meccanica celeste; 
+
+Ha collaborato con il matematico e fisico Carl Friedrich Gösta Mittag-Leffler; 
+
+Ha pubblicato diversi articoli sulle sue ricerche in fisica. Fu un’attivista sulla scrittura, sulla matematica, sulle scienze, sull’impegno sociale e contribuì sull’emancipazione femminile;
   </div>
 </body>
+  <script>
+    function Hide(min, max) {
+    var numero = Math.floor(Math.random() * (max - min + 2)) + min;
+      if (numero < 35) {
+       var hiddenDiv = document.getElementById('Mirzakhani');
+       hiddenDiv.classList.add('hidden');
+       var hiddenDiv2 = document.getElementById('Viazovska');
+       hiddenDiv2.classList.add('hidden')
+      }
+      else if (numero < 70) {
+       var hiddenDiv3 = document.getElementById('Viazovska');
+       hiddenDiv3.classList.add('hidden');
+       var hiddenDiv4 = document.getElementById('Kovalevskaja');
+       hiddenDiv4.classList.add('hidden')
+      }
+      else {
+       var hiddenDiv5 = document.getElementById('Kovalevskaja');
+       hiddenDiv5.classList.add('hidden');
+       var hiddenDiv6 = document.getElementById('Mirzakhani');
+       hiddenDiv6.classList.add('hidden')
+      }
+    }
+    window.addEventListener("load", function() {
+    Hide(1, 100);
+});
+  </script>
 </html>
